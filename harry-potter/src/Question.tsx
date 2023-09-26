@@ -27,9 +27,9 @@ function Question({
     const dificulty = Number(Cookies.get("dificulty"));
     const correct = Number(Cookies.get("correct"));
     if (dificulty != intenedDificulty) {
-        location.href = "everspaugh-quizes/harry-potter/";
+        location.href = "/everspaugh-quizes/harry-potter/";
     } else if (String(intenedQuestionNum) == Cookies.get("question")) {
-        location.href = "everspaugh-quizes/harry-potter/";
+        location.href = "/everspaugh-quizes/harry-potter/";
     }
 
     const difs = ["easy", "medium", "hard"];
@@ -45,14 +45,10 @@ function Question({
         } else if (selectedIndex == correctIndex) {
             setCookie("correct", correct + 1);
             setCookie("question", intenedQuestionNum + 2);
-            location.href = `everspaugh-quizes/harry-potter/${difs[dificulty]}${
-                intenedQuestionNum + 2
-            }`;
+            location.href = `${difs[dificulty]}${intenedQuestionNum + 2}`;
         } else {
             setCookie("question", intenedQuestionNum + 2);
-            location.href = `everspaugh-quizes/harry-potter/${difs[dificulty]}${
-                intenedQuestionNum + 2
-            }`;
+            location.href = `${difs[dificulty]}${intenedQuestionNum + 2}`;
         }
     }
 

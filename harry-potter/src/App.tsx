@@ -72,10 +72,13 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Home setCookie={setCookie} />} />
+                <Route
+                    path="/everspaugh-quizes/harry-potter"
+                    element={<Home setCookie={setCookie} />}
+                />
                 {easy_questions.map((question, index) => (
                     <Route
-                        path={`everspaugh-quizes/harry-potter/easy${index + 1}`}
+                        path={`easy${index + 1}`}
                         element={
                             <Question
                                 intenedQuestionNum={index}
@@ -90,28 +93,20 @@ function App() {
                     />
                 ))}
                 <Route
-                    path={`everspaugh-quizes/harry-potter/easy${
-                        easy_questions.length + 1
-                    }`}
+                    path={`easy${easy_questions.length + 1}`}
                     element={<EndPage />}
                 />
                 <Route
-                    path={`everspaugh-quizes/harry-potter/medium${
-                        easy_questions.length + 1
-                    }`}
+                    path={`medium${easy_questions.length + 1}`}
                     element={<EndPage />}
                 />
                 <Route
-                    path={`everspaugh-quizes/harry-potter/hard${
-                        easy_questions.length + 1
-                    }`}
+                    path={`hard${easy_questions.length + 1}`}
                     element={<EndPage />}
                 />
                 {medium_questions.map((question, index) => (
                     <Route
-                        path={`everspaugh-quizes/harry-potter/medium${
-                            index + 1
-                        }`}
+                        path={`medium${index + 1}`}
                         element={
                             <Question
                                 intenedQuestionNum={index}
@@ -127,7 +122,7 @@ function App() {
                 ))}
                 {hard_questions.map((question, index) => (
                     <Route
-                        path={`everspaugh-quizes/harry-potter/hard${index + 1}`}
+                        path={`hard${index + 1}`}
                         element={
                             <Question
                                 intenedQuestionNum={index}

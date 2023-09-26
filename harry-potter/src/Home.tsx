@@ -15,20 +15,22 @@ function Home({ setCookie }: Props) {
             "dificulty"
         )! as HTMLSelectElement;
         setCookie("dificulty", dificulty.selectedIndex, {
-            path: "/",
+            path: "/everspaugh-quizes/harry-potter",
         });
         if (dificulty.selectedIndex == 0) {
-            location.href = "everspaugh-quizes/harry-potter/easy1";
+            location.href = "easy1";
         } else if (dificulty.selectedIndex == 1) {
-            location.href = "everspaugh-quizes/harry-potter/medium1";
+            location.href = "medium1";
         } else {
-            location.href = "everspaugh-quizes/harry-potter/hard1";
+            location.href = "hard1";
         }
     }
 
     return (
         <>
-            <Navbar no_home="true">Harry Potter Quiz</Navbar>
+            <Navbar no_home="true" home_url="/everspaugh-quizes/harry-potter">
+                Harry Potter Quiz
+            </Navbar>
             <br />
             <div className="container">
                 <h1>Welcome to the Harry Potter Quiz!</h1>
