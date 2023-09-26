@@ -18,7 +18,7 @@ function EndPage() {
                 <br />
                 <Button
                     onClick={() => {
-                        location.href = "/";
+                        location.href = "harry-potter/";
                     }}
                 >
                     Go back to home

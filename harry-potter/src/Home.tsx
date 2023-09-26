@@ -18,11 +18,11 @@ function Home({ setCookie }: Props) {
             path: "/",
         });
         if (dificulty.selectedIndex == 0) {
-            location.href = "/easy1";
+            location.href = "harry-potter/easy1";
         } else if (dificulty.selectedIndex == 1) {
-            location.href = "/medium1";
+            location.href = "harry-potter/medium1";
         } else {
-            location.href = "hard1";
+            location.href = "harry-potter/hard1";
         }
     }
 
@@ -32,7 +32,7 @@ function Home({ setCookie }: Props) {
             <br />
             <div className="container">
                 <h1>Welcome to the Harry Potter Quiz!</h1>
-                <h2>Please select your dificulty:</h2>
+                <h2>Please select your difficulty:</h2>
                 <br />
                 <Select
                     item_names={[
