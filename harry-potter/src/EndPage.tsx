@@ -18,7 +18,7 @@ function EndPage() {
                 <br />
                 <Button
                     onClick={() => {
-                        location.href = "harry-potter/";
+                        location.href = "everspaugh-quizes/harry-potter/";
                     }}
                 >
                     Go back to home

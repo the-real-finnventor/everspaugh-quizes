@@ -18,11 +18,11 @@ function Home({ setCookie }: Props) {
             path: "/",
         });
         if (dificulty.selectedIndex == 0) {
-            location.href = "harry-potter/easy1";
+            location.href = "everspaugh-quizes/harry-potter/easy1";
         } else if (dificulty.selectedIndex == 1) {
-            location.href = "harry-potter/medium1";
+            location.href = "everspaugh-quizes/harry-potter/medium1";
         } else {
-            location.href = "harry-potter/hard1";
+            location.href = "everspaugh-quizes/harry-potter/hard1";
         }
     }
 
