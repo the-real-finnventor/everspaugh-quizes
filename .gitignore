@@ -1,0 +1,22 @@
+# Logs
+harry-potter/logs
+harry-potter/*.log
+harry-potter/npm-debug.log*
+harry-potter/yarn-debug.log*
+harry-potter/yarn-error.log*
+harry-potter/pnpm-debug.log*
+harry-potter/lerna-debug.log*
+
+harry-potter/dist-ssr
+harry-potter/*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
